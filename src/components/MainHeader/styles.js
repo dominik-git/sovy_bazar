@@ -31,3 +31,19 @@ export const StyledHeaderLogo = styled.img`
   height: 50px;
   background: red;
 `;
+
+export const NewHeader = styled.div``;
+
+export const NewHeaderContent = styled.div`
+  ${props =>
+    props.isExpanded === true &&
+    css`
+      display: block;
+      color: palevioletred;
+    `} ${props =>
+  props.isExpanded === false &&
+    css`
+      display: none;
+      color: palevioletred;
+    `};
+`;

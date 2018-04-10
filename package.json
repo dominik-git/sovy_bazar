@@ -48,14 +48,5 @@
     "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "^0.66.0",
     "prettier-eslint": "^8.8.1"
-  },
-  "proxy": {
-    "/api": {
-      "target": "http://172.20.47.196:5678",
-      "ws": true,
-      "pathRewrite": {
-        "^/api": "/"
-      }
-    }
   }
 }
