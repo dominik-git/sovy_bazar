@@ -5,8 +5,9 @@ export const StyledMainHeader = styled.div`
   background: grey;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
+  justify-content: flex-end;
   width: 100%;
   height: 100px;
   ${props =>
@@ -41,7 +42,7 @@ export const NewHeaderContent = styled.div`
       display: block;
       color: palevioletred;
     `} ${props =>
-  props.isExpanded === false &&
+    props.isExpanded === false &&
     css`
       display: none;
       color: palevioletred;
